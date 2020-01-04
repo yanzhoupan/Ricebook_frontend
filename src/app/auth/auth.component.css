@@ -1,0 +1,52 @@
+
+html{
+    min-height: 100%; 
+}
+
+
+body{
+    background: -webkit-linear-gradient(#F7971E, #FFD200); 
+}
+
+
+.landing{
+    /* padding: 10px 10px; */
+    /* display: inline-block; */
+    text-align: center;
+}
+
+.Card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    display: inline-block;
+    margin: 25px;
+    text-align: center;
+    vertical-align:top;
+}
+
+
+.Card:hover {
+    box-shadow: 0 16px 24px 0 rgba(0,0,0,0.2);
+}
+
+
+
+.logtable {
+    /* border: 1px solid; */
+    border-collapse:separate;
+    border-spacing:30px;
+    display:table-cell;
+    margin-right: 10px;
+}
+
+
+th{
+    font-size: 35px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    /* color: red; */
+}
+
+td{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+

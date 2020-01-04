@@ -1,0 +1,33 @@
+/* table{
+    border: 1px, solid;
+    color: red;
+} */
+
+.postCard{
+    border:1px solid black;
+}
+
+
+.newArticle, .articlesView{
+    background-color: #FFD200;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.articlesView:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
+}
+
+.image {
+    height: 128px;
+    width: 128px;
+}
+
+.commentBtn, .postBtn{
+    text-align: right;
+}
+
+textarea{
+    width: 100%;
+    height: 130px;
+}

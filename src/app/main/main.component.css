@@ -1,0 +1,28 @@
+.selfView, .friendsView{
+    text-align: center;
+    background-color: #FFD200;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.friendsView:hover, .selfView:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
+}
+
+.image {
+    height: 128px;
+    width: 128px;
+}
+
+.username{
+    font-size: 15px;
+}
+
+/* .friendsView{
+    text-align: center;
+} */
+
+.followHead{
+    font-size: 20px;
+    font-weight: bold;
+}

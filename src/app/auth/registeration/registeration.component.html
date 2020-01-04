@@ -1,0 +1,102 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html" />
+    <title>User registeration page</title>
+</head> -->
+
+
+<!-- <body> -->
+<!-- <fieldset class="landing">
+    <legend>Registeration area</legend> -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!-- <br><br> -->
+<div class="forms" >
+<form name="regForm">
+    <div align="tables" >
+    <table class="register">
+            <th colspan="3" class="title">Register</th>
+        <tr>
+            <td>Account name:</td>
+            <td>
+                <input id="un" #un class="form-control" placeholder="Enter name" type="text" name="name" required />
+            </td>
+            <td><font color="#FF0000">*Don't start with numbers</font></td>
+        </tr>
+        <tr>
+            <td>Display name:</td>
+            <td>
+                <input id="display" #display class="form-control" placeholder="Enter display name" type="text" name="disname"  />
+            </td>
+            <td><font color="#FF0000">*Display name is optional</font></td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td>
+                <input id="em" #em class="form-control" placeholder="Enter Email" type="email" name="email"  required/>
+            </td>
+            <td><font color="#FF0000">*Pay attention to email format</font></td>
+        </tr>
+        <tr>
+            <td>Phone:</td>
+            <td>
+                <input id="ph" #ph class="form-control" placeholder="eg: (123)456-7890" type="tel" name="phone" required/>
+            </td>
+            <td><font color="#FF0000">*Pay attention to phone number format</font></td>
+        </tr>
+        <tr>
+            <td>Birthday:</td>
+            <td>
+                <input id="birth" #birth class="form-control" type="date" name="birthday" required/>
+            </td>
+            <td><font color="#FF0000">*Your age should be over 18</font></td>
+        </tr>
+        <tr>
+            <td>Zipcode:</td>
+            <td>
+                <input id="zip" #zip class="form-control" placeholder="Enter zipcode" type="text" name="Zipcode" required/>
+            </td>
+            <td><font color="#FF0000">*Correspond to your address</font></td>
+        </tr>
+
+        <tr>
+            <td>Password:</td>
+            <td>
+                <input id="pw" #pw class="form-control" placeholder="Enter password" type="password" name="pw" required/>
+            </td>
+            <td><font color="#FF0000">*A combination of letters and numbers</font></td>
+        </tr>
+
+        <tr>
+            <td>Confirm Password:</td>
+            <td>
+                <input id="repw" #repw class="form-control" placeholder="Repeat password" type="password" name="confirmpw" required/>
+            </td>
+            <td><font color="#FF0000">*Please confirm your password</font></td>
+        </tr>
+        <tr>
+            <td>Gender</td>
+            <td>
+                <input type="radio" name="gender" value="Man" checked="checked"/>Male
+                <input type="radio" name="gender" value="Woman" />Female
+            </td>
+            <td><font color="#FF0000">*Choose carefully</font></td>
+        </tr>
+        <tr>
+            <th colspan="3">
+                <!-- <input type="reset" name="reset" value="Reset" /> -->
+
+<script>
+
+</script>
+                <!-- <input type="submit" onClick="return validateForm()" name="submit" value="Submit"/> -->
+                <button id="regBtn" class="btn btn-primary btn-lg" (click)="validateForm(un.value, display.value, em.value, ph.value, birth.value, zip.value, pw.value, repw.value)">Register</button>
+                <!-- validateForm(un.value, em.value, ph.value, zi.value, pw.value, repw.value) -->
+                <input type="hidden" id="timestamp" name="timestamp" value=""/>
+            </th>
+        </tr>
+    </table>
+    </div>
+</form>
+</div>
+<!-- </html> -->

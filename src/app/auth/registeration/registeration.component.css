@@ -1,0 +1,40 @@
+/* .register{
+    border: 1px solid;
+    border-color: #0099ff;
+    padding: 10px;
+    border-spacing: 0px;
+    align-content: center;
+} */
+
+/* border="1" bordercolor="#0099ff" cellpadding="10px" cellspacing="0" */
+
+.register{
+    border-spacing: 25px;
+}
+
+th{
+    font-size: 35px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    /* color: red; */
+}
+
+td{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.register{
+    border-collapse:separate;
+    border-spacing:30px;
+    display:table-cell;
+    text-align: center;
+}
+
+th{
+    font-size: 35px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    /* color: red; */
+}
+
+td{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}

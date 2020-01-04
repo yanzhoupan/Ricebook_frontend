@@ -1,0 +1,71 @@
+<!-- <p>posts works!!!</p>
+<p>{{currUser}}</p> -->
+
+<div class="newArticle">
+    <p>What's new with you?</p>
+    <textarea id="newPost" #newPost placeholder="Share something with others..." name="newPost" [(ngModel)]="newPostValue"></textarea>
+    <!-- 将输入的东西插入到filteredItems前面去！！ -->
+        <div >
+            Choose a picture:<input id="fileUpload" type="file">
+            <!-- <button ng-click="uploadFile()">Upload</button> -->
+        </div>
+
+    <div class="postBtn">
+        <button id="postBtn" type="button" class="btn btn-primary" (click)="post(newPost.value)">Post</button>
+        <button type="button" class="btn btn-primary" (click)="clear()">Cancle</button>
+    </div>
+</div>
+
+
+
+<HR><br>
+<input id="searchKeyword" #myInput placeholder="Search..."  (input)="filter(myInput.value)">
+<br><br>
+<div *ngFor="let article of filteredItems">
+        <div class="articlesView">
+            <tbody>
+            <tr>
+                <td> <img class="image"
+                    src="https://images.unsplash.com/photo-1567403731535-d4302684fb0c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                    />
+                </td>
+                <td>
+                    <!-- <h4>&nbsp;&nbsp;&nbsp;&nbsp;{{ article.title }}</h4> -->
+                    <h4>&nbsp;&nbsp;&nbsp;&nbsp;Author: {{article.author}}  <br> &nbsp;&nbsp;&nbsp;&nbsp;Time: {{article.date.substring(0,10)}}</h4>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;{{ article.text }}</p>
+                </td>
+            </tr>
+        </tbody>
+        <div class="commentBtn">
+                <button class="btn btn-primary" >Comment</button>
+                <button class="btn btn-primary" >Edit</button>
+        </div>
+        </div>
+        <div class="comments">
+            <div class="container">        
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Users</th>
+                            <th>Comments</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>user1</td>
+                            <td>Wow, that picture is so beautiful!</td>
+                        </tr>
+                        <tr>
+                            <td>user2</td>
+                            <td>Good job bro!</td>
+                        </tr>
+                        <tr>
+                            <td>user3</td>
+                            <td>I love web development!</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <HR>
+    </div>
